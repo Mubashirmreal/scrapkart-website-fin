@@ -60,14 +60,20 @@ export function Header() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 whileHover={{ y: -2 }}
               >
-                <Link
-                  href={item.href}
-                  className={`font-medium transition-colors duration-500 ${
-                    isScrolled ? "text-gray-700 hover:text-emerald-600" : "text-gray-200 hover:text-emerald-400"
-                  }`}
-                >
-                  {item.label}
-                </Link>
+                {item.label === "Contact" ? (
+                  <Button asChild className="bg-emerald-600 hover:bg-emerald-700 text-white transition-all duration-300">
+                    <Link href={item.href}>{item.label}</Link>
+                  </Button>
+                ) : (
+                  <Link
+                    href={item.href}
+                    className={`font-medium transition-colors duration-500 ${
+                      isScrolled ? "text-gray-700 hover:text-emerald-600" : "text-gray-200 hover:text-emerald-400"
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                )}
               </motion.div>
             ))}
             <motion.div
@@ -147,14 +153,20 @@ export function Header() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.3, delay: index * 0.1 }}
                   >
-                    <Link
-                      href={item.href}
-                      className={`font-medium transition-colors duration-500 ${
-                        isScrolled ? "text-gray-700 hover:text-emerald-600" : "text-gray-200 hover:text-emerald-400"
-                      }`}
-                    >
-                      {item.label}
-                    </Link>
+                    {item.label === "Contact" ? (
+                      <Button asChild className="bg-emerald-600 hover:bg-emerald-700 text-white w-full">
+                        <Link href={item.href}>{item.label}</Link>
+                      </Button>
+                    ) : (
+                      <Link
+                        href={item.href}
+                        className={`font-medium transition-colors duration-500 ${
+                          isScrolled ? "text-gray-700 hover:text-emerald-600" : "text-gray-200 hover:text-emerald-400"
+                        }`}
+                      >
+                        {item.label}
+                      </Link>
+                    )}
                   </motion.div>
                 ))}
                 <motion.div
