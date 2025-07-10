@@ -38,8 +38,8 @@ export function Header() {
               <Image
                 src="/images/scrapkart-logo.png"
                 alt="Scrapkart Logo"
-                width={200} // Adjust width as needed
-                height={100} // Adjust height as needed
+                width={300} // Adjust width as needed
+                height={200} // Adjust height as needed
                 priority
                 className={`object-contain ${isScrolled ? "invert" : ""}`} // Invert color when scrolled
               />

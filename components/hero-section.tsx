@@ -11,8 +11,8 @@ export function HeroSection() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/placeholder.svg?height=1080&width=1920"
-          alt="Happy customers recycling with Scrapkart pickup service"
+          src="/ai-generated-8367652_1280.jpg"
+          alt="Forest with mist"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
@@ -94,19 +94,26 @@ export function HeroSection() {
                   </Button>
                 </motion.div>
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <Button
-                    variant="outline"
-                    size="lg"
-                    className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg font-semibold group bg-transparent"
+                  <a
+                    href="https://youtu.be/iF4MyP4_VBA?si=Wr0mdz72FZqbx6sA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
                   >
-                    <motion.div
-                      animate={{ scale: [1, 1.1, 1] }}
-                      transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
+                    <Button
+                      variant="outline"
+                      size="lg"
+                      className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg font-semibold group bg-transparent"
                     >
-                      <Play className="mr-2 w-5 h-5" />
-                    </motion.div>
-                    Watch How It Works
-                  </Button>
+                      <motion.div
+                        animate={{ scale: [1, 1.1, 1] }}
+                        transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
+                      >
+                        <Play className="mr-2 w-5 h-5" />
+                      </motion.div>
+                      Watch How It Works
+                    </Button>
+                  </a>
                 </motion.div>
               </motion.div>
 

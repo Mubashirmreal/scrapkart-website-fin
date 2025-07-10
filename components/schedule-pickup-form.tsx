@@ -51,7 +51,7 @@ export function SchedulePickupForm() {
     keepUpdated: false,
   })
 
-  const wasteTypes = ["Plastic", "Paper", "Metal", "E-Waste", "Mixed"]
+  const wasteTypes = ["Plastic", "Glass", "Metal", "E-Waste", "Mixed"]
 
   const handleInputChange = (field: keyof FormData, value: string | boolean) => {
     setFormData((prev) => ({ ...prev, [field]: value }))
