@@ -60,36 +60,16 @@ export function Header() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 whileHover={{ y: -2 }}
               >
-                {item.label === "Contact" ? (
-                  <Button asChild className="bg-emerald-600 hover:bg-emerald-700 text-white transition-all duration-300">
-                    <Link href={item.href}>{item.label}</Link>
-                  </Button>
-                ) : (
-                  <Link
-                    href={item.href}
-                    className={`font-medium transition-colors duration-500 ${
-                      isScrolled ? "text-gray-700 hover:text-emerald-600" : "text-gray-200 hover:text-emerald-400"
-                    }`}
-                  >
-                    {item.label}
-                  </Link>
-                )}
+                <Link
+                  href={item.href}
+                  className={`font-medium transition-colors duration-500 ${
+                    isScrolled ? "text-gray-700 hover:text-emerald-600" : "text-gray-200 hover:text-emerald-400"
+                  }`}
+                >
+                  {item.label}
+                </Link>
               </motion.div>
             ))}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Button
-                className="bg-emerald-600 hover:bg-emerald-700 text-white transition-all duration-300"
-                onClick={() => (window.location.href = "/schedule-pickup")}
-              >
-                Schedule Pickup
-              </Button>
-            </motion.div>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -153,34 +133,16 @@ export function Header() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.3, delay: index * 0.1 }}
                   >
-                    {item.label === "Contact" ? (
-                      <Button asChild className="bg-emerald-600 hover:bg-emerald-700 text-white w-full">
-                        <Link href={item.href}>{item.label}</Link>
-                      </Button>
-                    ) : (
-                      <Link
-                        href={item.href}
-                        className={`font-medium transition-colors duration-500 ${
-                          isScrolled ? "text-gray-700 hover:text-emerald-600" : "text-gray-200 hover:text-emerald-400"
-                        }`}
-                      >
-                        {item.label}
-                      </Link>
-                    )}
+                    <Link
+                      href={item.href}
+                      className={`font-medium transition-colors duration-500 ${
+                        isScrolled ? "text-gray-700 hover:text-emerald-600" : "text-gray-200 hover:text-emerald-400"
+                      }`}
+                    >
+                      {item.label}
+                    </Link>
                   </motion.div>
                 ))}
-                <motion.div
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.3, delay: 0.3 }}
-                >
-                  <Button
-                    className="bg-emerald-600 hover:bg-emerald-700 text-white w-full"
-                    onClick={() => (window.location.href = "/schedule-pickup")}
-                  >
-                    Schedule Pickup
-                  </Button>
-                </motion.div>
               </nav>
             </motion.div>
           )}

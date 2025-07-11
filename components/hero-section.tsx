@@ -5,6 +5,14 @@ import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
 import { Play, ArrowRight } from "lucide-react"
 
+// Add this TypeScript declaration to allow window.gtag
+// eslint-disable-next-line no-var
+declare global {
+  interface Window {
+    gtag?: (...args: any[]) => void;
+  }
+}
+
 export function HeroSection() {
   return (
     <section className="relative min-h-screen overflow-hidden">
@@ -29,7 +37,8 @@ export function HeroSection() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <motion.div
-              className="space-y-8"
+              className="space-y-6
+              "
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
@@ -81,7 +90,15 @@ export function HeroSection() {
                   <Button
                     size="lg"
                     className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 text-lg font-semibold group transition-all duration-300"
-                    onClick={() => (window.location.href = "/schedule-pickup")}
+                    onClick={() => {
+                      if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+                        window.gtag('event', 'schedule_pickup_click', {
+                          event_category: 'engagement',
+                          event_label: 'Schedule Pickup Now',
+                        });
+                      }
+                      window.location.href = "/schedule-pickup";
+                    }}
                   >
                     Schedule Pickup Now
                     <motion.div
