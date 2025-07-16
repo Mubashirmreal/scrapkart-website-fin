@@ -62,15 +62,15 @@ export function Footer() {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-emerald-400" />
-                <span className="text-gray-300">+91 98765 43210</span>
+                <span className="text-gray-300">+91 96181 02268</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-emerald-400" />
-                <span className="text-gray-300">hello@scrapkart.com</span>
+                <span className="text-gray-300">ceo@scrapkart.app</span>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-emerald-400 mt-1" />
-                <span className="text-gray-300">123 Green Street, Eco City, EC 12345</span>
+                <span className="text-gray-300">Edventure park, Masab Tank, Hyderabad</span>
               </div>
             </div>
           </div>
