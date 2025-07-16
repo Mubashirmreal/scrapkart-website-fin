@@ -59,7 +59,6 @@ export function HeroSection() {
                   >
                     Value
                   </motion.span>{" "}
-                  –{" "}
                   <motion.span
                     className="text-emerald-400"
                     initial={{ opacity: 0 }}
