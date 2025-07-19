@@ -19,18 +19,42 @@ export function Footer() {
               Transforming waste into value while building a sustainable future for everyone.
             </p>
             <div className="flex space-x-4">
-              <Button variant="ghost" size="sm" className="text-gray-300 hover:text-emerald-400 p-2">
+              <a
+                href="https://www.facebook.com/people/Scrapkart/61555778645600/?rdid=F14nsmpSiBI93eq1&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CaPKn8GeJ%2F"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="text-gray-300 hover:text-emerald-400 p-2"
+              >
                 <Facebook className="w-5 h-5" />
-              </Button>
-              <Button variant="ghost" size="sm" className="text-gray-300 hover:text-emerald-400 p-2">
+              </a>
+              <a
+                href="https://x.com/scrapkart"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter/X"
+                className="text-gray-300 hover:text-emerald-400 p-2"
+              >
                 <Twitter className="w-5 h-5" />
-              </Button>
-              <Button variant="ghost" size="sm" className="text-gray-300 hover:text-emerald-400 p-2">
+              </a>
+              <a
+                href="https://www.instagram.com/scrapkart.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="text-gray-300 hover:text-emerald-400 p-2"
+              >
                 <Instagram className="w-5 h-5" />
-              </Button>
-              <Button variant="ghost" size="sm" className="text-gray-300 hover:text-emerald-400 p-2">
+              </a>
+              <a
+                href="https://www.linkedin.com/in/scrap-kart-0352bb2b4/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="text-gray-300 hover:text-emerald-400 p-2"
+              >
                 <Linkedin className="w-5 h-5" />
-              </Button>
+              </a>
             </div>
           </div>
 
