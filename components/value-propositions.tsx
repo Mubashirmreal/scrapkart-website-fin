@@ -80,9 +80,9 @@ export default function ValuePropositions() {
           </p>
         </motion.div>
 
-        {/* Uneven Grid Layout */}
+        {/* Responsive Bento Grid Layout */}
         <motion.div
-          className="grid grid-cols-12 grid-rows-8 gap-4 h-[600px] shadow-2xl rounded-2xl p-6 bg-white"
+          className="grid grid-cols-1 gap-4 shadow-2xl rounded-2xl p-6 bg-white md:grid-cols-12 md:grid-rows-8 md:h-[600px]"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -91,7 +91,7 @@ export default function ValuePropositions() {
           {/* Card 1 - Large */}
           <motion.div
             variants={cardVariants}
-            className="col-span-12 md:col-span-7 row-span-4"
+            className="col-span-1 md:col-span-7 md:row-span-4"
             whileHover={{
               y: -10,
               transition: { duration: 0.3 },
@@ -140,7 +140,7 @@ export default function ValuePropositions() {
           {/* Card 2 - Medium */}
           <motion.div
             variants={cardVariants}
-            className="col-span-12 md:col-span-5 row-span-4"
+            className="col-span-1 md:col-span-5 md:row-span-4"
             whileHover={{
               y: -10,
               transition: { duration: 0.3 },
@@ -189,7 +189,7 @@ export default function ValuePropositions() {
           {/* Card 3 - Small */}
           <motion.div
             variants={cardVariants}
-            className="col-span-6 md:col-span-4 row-span-4"
+            className="col-span-1 md:col-span-4 md:row-span-4"
             whileHover={{
               y: -10,
               transition: { duration: 0.3 },
@@ -236,7 +236,7 @@ export default function ValuePropositions() {
           {/* Card 4 - Medium Wide */}
           <motion.div
             variants={cardVariants}
-            className="col-span-6 md:col-span-5 row-span-4"
+            className="col-span-1 md:col-span-5 md:row-span-4"
             whileHover={{
               y: -10,
               transition: { duration: 0.3 },
@@ -285,7 +285,7 @@ export default function ValuePropositions() {
           {/* Card 5 - Tall */}
           <motion.div
             variants={cardVariants}
-            className="col-span-12 md:col-span-3 row-span-4"
+            className="col-span-1 md:col-span-3 md:row-span-4"
             whileHover={{
               y: -10,
               transition: { duration: 0.3 },
